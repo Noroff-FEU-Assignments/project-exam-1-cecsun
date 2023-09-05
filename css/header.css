@@ -18,7 +18,7 @@
 
 @media (min-width: 1001px) {
     header {
-        background-color: rgba(158, 159, 165, 1);
+        background-color: rgba(196, 193, 164, 1);
         width: 100%;
     }
 
@@ -33,7 +33,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(158, 159, 165, 1);
+        background-color: rgba(196, 193, 164, 1);
+    }
+
+    .header-logo img {
+        margin-top: 10px;
     }
 
     header input, label {
@@ -41,13 +45,13 @@
     }
 
     .main-header nav a {
-        /* margin-top: 60px; */
+        margin-top: 30px;
         font-family: 'Poppins', sans-serif;
         display: inline-block;
-        margin-inline: 60px;
-        font-size: 30px;
-        color: white;
-        font-weight: 400;
+        margin-inline: 40px;
+        font-size: 20px;
+        color: black;
+        font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px;
@@ -56,7 +60,7 @@
 
 @media (max-width: 1000px) {
     header {
-        background-color: rgba(158, 159, 165, 1);
+        background-color: rgba(196, 193, 164, 1);
         width: 100%;
     }
     
@@ -76,11 +80,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(158, 159, 165, 1);
+        background-color: rgba(196, 193, 164, 1);
     }
 
     .header-logo img {
         /* height: 100px; */
+        margin-top: 10px;
     }
 
     /* .main-header .hide {
@@ -113,18 +118,18 @@
 
     nav {
         position: absolute;
-        background-color: rgba(158, 159, 165, 1);
+        background-color: rgba(196, 193, 164, 1);
         /* right: 0px; */
         /* top: 100px; */
     }
 
     nav a {
         display: block;
-        padding: 20px 30px;
+        padding: 20px 50px;
         font-family: 'Poppins', sans-serif;;
         text-transform: uppercase;
         font-size: 18px;
-        color: white;
+        color: black;
         text-decoration: none;
         font-weight: 500;
         text-align: center;
