@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/carousel.css">
     <script src="https://kit.fontawesome.com/6fb668811a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,6 +34,40 @@
 
     <main>
         
+
+
+        <div class="carousel">
+            <button class="carousel-button-left is-hidden">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <a href="index.html"><img src="/images/image4.jpg" alt="logo"></a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="index.html"><img src="/images/image1.jpg" alt="logo"></a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="index.html"><img src="/images/image7.jpg" alt="logo"></a>
+                    </li>
+                    <!-- <li class="carousel-slide">
+                        <a href="index.html"><img src="/images/image9.jpg" alt="logo"></a>
+                    </li> -->
+                </ul>
+            </div>
+            <button class="carousel-button-right">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+
+        <script src="/js/carousel.js"></script>
+
     </main>
 
     <footer>
