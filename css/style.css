@@ -8,3 +8,74 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+.pizza-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.pizza-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pizza-container img {
+    border-radius: 5px;
+}
+
+.index-pizza-button {
+    font-size: 50px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+.index-recipe-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    background-color: rgba(255, 246, 220, 1);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.see-all-recipes {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.see-all-recipes-button {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    /* color: black; */
+    /* text-transform: uppercase; */
+    /* font-size: 18px; */
+    /* background-color: rgba(196, 193, 164, 1); */
+}
+
+.see-all-recipes {
+    position: relative;
+    /* text-align: center; */
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: rgba(196, 193, 164, 1);
+}
+
