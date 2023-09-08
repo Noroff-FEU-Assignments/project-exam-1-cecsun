@@ -54,7 +54,7 @@ html, body {
     opacity: 1;
 }
 
-h2 {
+.index-main h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
     text-align: center;
@@ -113,7 +113,7 @@ h2 {
     text-align: center;
 }
 
-.index-about-info h3 {
+.index-about-info h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
     text-align: center;
@@ -144,5 +144,42 @@ h2 {
     opacity: 1;
 }
 
+/* Recipes.html ---------------- */
 
+.recipes-main h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0px;
+}
 
+.recipes-container {
+    margin: 0px 40px;
+}
+
+.container1, .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.container1 img, .container2 img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container1 {
+    margin-bottom: 50px;
+}
+
+.recipes-container .container1-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.recipes-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
