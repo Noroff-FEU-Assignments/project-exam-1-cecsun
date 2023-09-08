@@ -28,17 +28,17 @@ html, body {
 }
 
 .pizza-heading {
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     font-family: 'Dancing Script', cursive;
     text-decoration: none;
 }
 
 .index-recipe-button {
-    padding: 20px;
+    padding: 30px;
 }
 
-.index-recipe-button .recipe-button {
+.recipe-button {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     text-decoration: none;
@@ -96,7 +96,7 @@ h2 {
 .index-about-container img {
     display: flex;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 20px;
 }
 
@@ -117,7 +117,7 @@ h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
     text-align: center;
-    margin: 40px 0px;
+    margin: 30px 0px;
 }
 
 .index-about-info p {
