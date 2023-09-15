@@ -123,6 +123,7 @@
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .carousel-button-left, .carousel-button-right {
