@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/carousel.css">
     <script src="https://kit.fontawesome.com/6fb668811a.js" crossorigin="anonymous"></script>
+    <script defer src="/js/form.js"></script>
+
     <!-- Hotjar Tracking Code for Savory -->
     <script>
     (function(h,o,t,j,a,r){
@@ -48,7 +49,8 @@
 
 
         <div class="form-container">
-            <form action="cecilie.no">
+            <!-- <form action="/index.html"> -->
+            <form name="myForm" action="/index.html" onsubmit="return validateForm()" method="post">
           
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name...">
