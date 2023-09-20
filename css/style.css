@@ -195,50 +195,43 @@ html, body {
 
     /* Specific-recipe -------------- */
 
+    .product-main {
+        margin: 30px 240px;
+    }
+
     .specific-recipe-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 10px 240px;
+        /* margin: 10px 240px; */
+        gap: 20px;
     }
 
-    /* .recipe-container1 {
-        flex: 1;
-        margin: 0px 20px;
-    }
-
-    .recipe-container1 img {
-        border-radius: 5px;
-        height: 100%;
-        width: 100%;
-        object-fit:cover;
-    } */
-
-
-
-    /* .right-recipe-container {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-    } */
-
-    /* .recipe-container2, .recipe-container3 {
-        margin-bottom: 10px;
-        background-color: rgba(255, 246, 220, 1);
+    .recipe-container2, .recipe-container3 {
+        /* margin-bottom: 10px; */
         border-radius: 5px;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
-        flex: 1;
-        margin: 0px 20px;
-    } */
+        /* flex: 1; */
+        /* margin: 0px 20px; */
+    }
 
     .recipe-container2 {
         background-color: rgba(255, 246, 220, 1);
-        padding: 30px;
+        padding: 40px;
     }
+
+    /* .recipe-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 
     .recipe-container3 {
         background-color: rgba(196, 193, 164, 1);
-        padding: 20px;
+    }
+
+    .recipe-container3 li {
+        padding: 5px 0px;
     }
 
     .recipe-container3 h2, .instructions-container h3 {
@@ -246,29 +239,42 @@ html, body {
         font-size: 30px;
     }
 
+    .recipe-container3 h2 {
+        padding: 35px;
+    }
+
     .instructions-container h3 {
-        padding: 20px;
+        padding: 30px;
     }
 
     .recipe-container3 .ingredients-container {
         display: flex;
-        justify-content: space-between;
-        margin: 20px 120px;
+        /* justify-content: space-between; */
+        justify-content: center;
+        /* margin: 20px 120px; */
     }
 
     .instructions-container {
-        margin: 30px 260px;
-        padding: 20px;
+        /* margin: 30px 20px; */
+        /* margin: 0 auto; */
+        /* padding: 20px; */
         background-color: rgba(255, 198, 172, 1);
         border-radius: 5px;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
+        margin-top: 20px;
     }
 
     .instructions-container ol {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin: 10px 80px;
-        place-content: center;
+        padding-bottom: 40px;
+        margin: 0px 40px;
+    }
+
+    .instructions-container li {
+        padding: 10px 0px;
     }
 
     /* About ------------------ */

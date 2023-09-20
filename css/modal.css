@@ -1,9 +1,11 @@
 #myImg {
-  /* border-radius: 5px; */
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
   width: 100%;
-  max-width: 300px;
+  /* max-width: 300px; */
+  height: 100%;
+  object-fit: cover;
 }
 
 #myImg:hover {opacity: 0.9;}
