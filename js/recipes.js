@@ -1,18 +1,22 @@
 import {fetchAllPostsByPage, fetchMediaByID} from "./api.js"
 
-
-
-
+let page = 1;
 
 async function populateRecipes() {
     let container1 = document.querySelector(".container1")
-
-    let posts = await fetchAllPostsByPage(1);
-
+    let posts = undefined
+    try {
+        posts = await fetchAllPostsByPage(page);
+    } catch {
+        console.log("return")
+        return;
+    }
+    page++;
+    if (posts == undefined) {
+        return;
+    }
+    console.log(posts)
     for (const post of posts)  {
-
-
-        console.log(post)
         let media = await fetchMediaByID(post.featured_media);
         
         const image_url = media.source_url; 
@@ -47,10 +51,12 @@ async function populateRecipes() {
         container1.appendChild(divContainerRecipe);
 
     }
-
-
-
-
+  
 }
+
+let viewMore = document.querySelector(".view-more")
+viewMore.addEventListener('click', populateRecipes);
+
+
 
 populateRecipes();
