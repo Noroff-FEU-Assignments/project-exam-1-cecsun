@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/modal.css">
     <script src="https://kit.fontawesome.com/6fb668811a.js" crossorigin="anonymous"></script>
     <script defer src="/js/modal.js"></script>
+    <script defer src="/js/specific-recipe.js" type="module"></script>
     <!-- Hotjar Tracking Code for Savory -->
     <script>
     (function(h,o,t,j,a,r){
@@ -45,10 +46,10 @@
     </header>
 
     <div class="product-main">
-        <h1>Title</h1>
+        <h1 class="title"></h1>
         <div class="specific-recipe-container">
             <div class="recipe-container1">
-                <img id="myImg" src="/images/image1.jpg" alt="Snow">
+                <img class="product-image" id="myImg" alt="food">
                 <div id="myModal" class="modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
@@ -56,35 +57,20 @@
                 </div>
             </div>
             <div class="recipe-container2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="recipe-container3">
                 <h2>Ingredients</h2>
                     <div class="ingredients-container">
-                        <ul>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
-                            <li>Lorem ipsum</li>
+                        <ul class="ingredients-list">
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="instructions-container">
                 <h3>Instructions</h3>
-                <ol>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <ol class="instructions">
+        
                 </ol>
             </div>
         </div>
