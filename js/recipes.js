@@ -2,20 +2,19 @@ import {fetchAllPostsByPage, fetchMediaByID} from "./api.js"
 
 let page = 1;
 
+let viewMore = document.querySelector(".view-more")
+
 async function populateRecipes() {
     let container1 = document.querySelector(".container1")
-    let posts = undefined
-    try {
-        posts = await fetchAllPostsByPage(page);
-    } catch {
-        console.log("return")
-        return;
-    }
+    let postsData = await fetchAllPostsByPage(page);
+    let posts = postsData.data;
+    let maxPages = postsData.maxPages;
+    
     page++;
     if (posts == undefined) {
         return;
     }
-    console.log(posts)
+
     for (const post of posts)  {
         let media = await fetchMediaByID(post.featured_media);
         
@@ -49,14 +48,16 @@ async function populateRecipes() {
         divContainerRecipe.appendChild(p);
 
         container1.appendChild(divContainerRecipe);
+    }
 
+    if (page > maxPages) {
+        viewMore.style.display = "none"; 
+        return;
     }
   
 }
 
-let viewMore = document.querySelector(".view-more")
 viewMore.addEventListener('click', populateRecipes);
 
-
-
 populateRecipes();
+

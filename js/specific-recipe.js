@@ -34,6 +34,7 @@ async function populateSpecificRecipe() {
         instructionsHtml.appendChild(instructionHtml);
     }
 
+    document.title = post.title.rendered;
 }
 
 function getIdParam() {
