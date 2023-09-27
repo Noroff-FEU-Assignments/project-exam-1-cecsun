@@ -197,14 +197,19 @@ html, body {
     /* Contact -------------- */
 
     .form-container {
-        margin: 0px 250px;
+        width: 40%;
+        margin: 0 auto;
         border-radius: 5px;
-        background-color: rgba(255, 198, 172, 1);
+        /* background-color: rgba(255, 198, 172, 1); */
+        background-image: url("/images/image10.jpg");
+        background-size:cover;
         padding: 20px;
     }
 
-    .form-container label {
+    .form-container p {
         font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: black;
     }
 
     input[type=text], select, textarea {
@@ -220,7 +225,8 @@ html, body {
     }
     
     input[type=submit] {
-        background-color: rgba(255, 246, 220, 1);
+        /* background-color: rgba(255, 246, 220, 1); */
+        background-color: rgba(255, 198, 172, 1);
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
         text-align: center;
@@ -233,6 +239,7 @@ html, body {
         cursor: pointer;
         display: block;
         margin: 0 auto;
+        border: 0;
     }
     
     input[type=submit]:hover {
