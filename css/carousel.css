@@ -89,16 +89,16 @@
         height: 450px;
         width: 80%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
         /* object-fit: cover; */
     }
 
     .carousel img {
         height: 100%;
-        object-fit: cover;
+        /* object-fit: cover; */
         width: 100%;
         padding: 5px;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     .carousel-track-container {
@@ -109,10 +109,10 @@
     }
 
     .carousel-track {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        position: relative;
+        /* padding: 0; */
+        /* margin: 0; */
+        /* list-style: none; */
+        /* position: relative; */
         height: 100%;
         transition: transform 250ms ease-in;
     }
@@ -122,14 +122,14 @@
         height: 100%;
         width: 100%;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
     }
 
     .carousel-button-left, .carousel-button-right {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        /* transform: translateY(-50%); */
         background-color: rgba(196, 193, 164, 1);
         border: 0;
         border-radius: 50%;
@@ -137,22 +137,22 @@
     }
 
     .carousel-button-left {
-        left: -40px;
+        left: -50px;
     }
 
     .carousel-button-right {
-        right: -40px;
+        right: -50px;
     }
 
     .carousel-button-left, .carousel-button-right {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .carousel-nav {
         display: flex;
         justify-content: center;
-        padding: 10px 0;
+        /* padding: 10px 0; */
     }
 
     .carousel-indicator {
@@ -160,14 +160,14 @@
         border-radius: 50%;
         width: 15px;
         height: 15px;
-        background-color: rgba(0,0,0,.3);
-        margin: 0 12px;
+        background-color: rgba(215, 215, 215, 1);
+        margin: 0px 10px;
         margin-top: 10px;
         cursor: pointer;
     }
 
     .carousel-indicator.current-slide {
-        background-color: rgba(0,0,0,.75);
+        background-color: rgba(85, 85, 85, 1);
     }
 
     .is-hidden { display: none; }
