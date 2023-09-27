@@ -147,16 +147,12 @@ html, body {
         margin-bottom: 60px;
     }
 
-    /* Specific-recipe -------------- */
-
-
-
     /* About ------------------ */
 
     .about-container1, .about-container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 10px 120px;
+        margin: 0px 120px;
     }
 
     .box1, .box4 {
@@ -165,7 +161,7 @@ html, body {
         margin: 20px;
     }
 
-    .box1 p {
+    .box1 p, .box4 p {
         margin: 50px;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
@@ -192,12 +188,6 @@ html, body {
         object-fit: cover;
         width: 100%;
         height: 100%;
-    }
-
-    .box4 p {
-        margin: 50px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
     }
 
     .box3.mobile {
