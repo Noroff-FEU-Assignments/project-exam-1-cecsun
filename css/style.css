@@ -69,7 +69,7 @@ html, body {
         display: flex;
         margin: 0 auto;
         /* border-radius: 20px; */
-        padding: 15px;
+        padding: 10px;
     }
 
     .index-about-image {
@@ -82,7 +82,7 @@ html, body {
         background-color: white;
         border-style: solid;
         border-color: rgba(255, 198, 172, 1);
-        border-width: 15px;
+        border-width: 10px;
         text-align: center;
         border-radius: 0px 5px 5px 0px;
     }
