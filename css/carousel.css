@@ -77,7 +77,7 @@
     .is-hidden { display: none; }
 }
 
-@media (min-width: 701px) and (max-width: 1200px) {
+@media (min-width: 801px) and (max-width: 1200px) {
     .carousel {
         position: relative;
         height: 300px;
@@ -156,3 +156,43 @@
 
     .is-hidden { display: none; }
 }
+
+@media (max-width: 800px) {
+    .carousel {
+        position: relative;
+        height: 200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .carousel img {
+        height: 100%;
+        width: 100%;
+        padding: 5px;
+        object-fit: cover;
+    }
+
+    .carousel-track-container {
+        background-color: white;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .carousel-slide {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .carousel-button-left, .carousel-button-right {
+        display: none;
+    }
+
+    .carousel-nav {
+        display: none;
+    }
+}
+

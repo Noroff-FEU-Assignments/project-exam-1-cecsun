@@ -10,10 +10,6 @@ html, body {
 }
 
 @media (min-width: 1201px) {
-    .latest-mobile {
-        display: none;
-    }
-
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 50px;
@@ -247,11 +243,7 @@ html, body {
     }
 }
 
-@media (min-width: 701px) and (max-width: 1200px) {
-    .latest-mobile {
-        display: none;
-    }
-
+@media (min-width: 801px) and (max-width: 1200px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 40px;
@@ -259,7 +251,7 @@ html, body {
     }
 
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        margin: 50px 0px 10px 0px;
+        margin: 50px 0px 20px 0px;
     }
 
     .see-all-recipes, .about-button, .view-more {
@@ -356,7 +348,7 @@ html, body {
 
     .container1 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 
@@ -372,7 +364,7 @@ html, body {
 
     .container1-heading {
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         padding: 5px 0px;
     }
@@ -394,24 +386,24 @@ html, body {
     .about-container1, .about-container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0px 120px;
+        margin: 0px 20px;
     }
 
     .box1, .box4 {
         border-radius: 5px;
         background-color: rgba(255, 246, 220, 1);
-        margin: 20px;
+        margin: 10px;
     }
 
     .box1 p, .box4 p {
         margin: 50px;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .box2, .box3 {
         border-radius: 5px;
-        margin: 20px;
+        margin: 10px;
         display: flex;
         justify-content: center;
     }
@@ -425,6 +417,8 @@ html, body {
     }
 
     .box2 img, .box3 img {
+        display: flex;
+        margin: 0 auto;
         border-radius: 25px;
         padding: 20px;
         object-fit: cover;
@@ -439,7 +433,7 @@ html, body {
     /* Contact -------------- */
 
     .form-container {
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         border-radius: 5px;
         /* background-color: rgba(255, 198, 172, 1); */
@@ -450,7 +444,7 @@ html, body {
 
     .form-container p {
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         color: black;
     }
 
@@ -463,7 +457,7 @@ html, body {
         margin-bottom: 15px; 
         resize: vertical;
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 16px;
     }
     
     input[type=submit] {
@@ -475,7 +469,7 @@ html, body {
         padding: 10px;
         color: black;
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 16px;
         border-radius: 5px;
         opacity: 0.9;
         cursor: pointer;
@@ -489,24 +483,17 @@ html, body {
     }
 }
 
-@media (max-width: 700px) {
-    .carousel {
-        display: none;
+@media (max-width: 800px) {
+    .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+      
+    .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
+        margin: 40px 0px 10px 0px;
     }
 
-    .latest-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin: 20px 10px;
-    }
-
-    .latest-mobile img {
-        height: 100%;
-        width: 100%;
-        /* margin: 20px; */
-    }
-    
     .see-all-recipes, .about-button, .view-more {
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
@@ -517,17 +504,21 @@ html, body {
         opacity: 0.9;
     }
 
-    .about-button, .view-more, .see-all-recipes {
-        padding: 5px;
-    }
-
-    .about-button, .view-more {
-        background-color: rgba(255, 198, 172, 1);
+    .see-all-recipes, .about-button, .view-more {
+        padding: 8px;
     }
 
     .see-all-recipes {
         background-color: rgba(196, 193, 164, 1);
+        cursor: pointer;
     }
+
+    .about-button, .view-more {
+        background-color: rgba(255, 198, 172, 1);
+        cursor: pointer;
+    }
+
+
 
     .view-more {
         text-align: center;
@@ -535,26 +526,6 @@ html, body {
 
     .about-button:hover, .view-more:hover, .see-all-recipes:hover {
         opacity: 1;
-    }
-
-    .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        margin: 25px 0px;
-    }
-
-    .index-main h1 {
-        margin-bottom: 10px;
-    }
-
-    .see-all-recipes {
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none;
-        text-align: center;
     }
 
     .see-all-recipes-button {
@@ -652,90 +623,6 @@ html, body {
         margin-bottom: 40px;
     }
 
-    /* Specific-recipe -------------- */
-
-    .product-main {
-        margin: 30px 20px;
-    }
-
-    /* .specific-recipe-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    } */
-
-    .recipe-container1, .recipe-container2, .recipe-container3 {
-        /* height: 450px; */
-    }
-
-    .recipe-container2, .recipe-container3 {
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .recipe-container2 {
-        background-color: rgba(255, 246, 220, 1);
-        padding: 20px;
-    }
-
-    /* .recipe-container2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    .recipe-container3 {
-        background-color: rgba(196, 193, 164, 1);
-    }
-
-    .recipe-container3 ul {
-        padding-bottom: 20px;
-    }
-
-    .recipe-container3 li {
-        padding: 5px 0px;
-    }
-
-    .recipe-container3 h2, .instructions-container h3 {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .recipe-container3 h2 {
-        padding: 20px;
-    }
-
-    .instructions-container h3 {
-        padding: 15px;
-    }
-
-    .recipe-container3 .ingredients-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .instructions-container {
-        background-color: rgba(255, 198, 172, 1);
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .instructions-container ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;
-        margin: 0px 20px;
-    }
-
-    .instructions-container li {
-        padding: 5px 0px;
-    }
-
     /* About ------------------ */
 
     .about-container1, .about-container2 {
@@ -750,7 +637,7 @@ html, body {
         margin: 20px;
     }
 
-    .box1 p {
+    .box1 p, .box4 p {
         padding: 20px;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -779,12 +666,6 @@ html, body {
         height: 100%;
     }
 
-    .box4 p {
-        padding: 20px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-    }
-
     .box3.desktop {
         display: none;
     }
@@ -792,14 +673,19 @@ html, body {
     /* Contact -------------- */
 
     .form-container {
-        margin: 0px 20px;
+        width: 90%;
+        margin: 0 auto;
         border-radius: 5px;
-        background-color: rgba(255, 198, 172, 1);
+        /* background-color: rgba(255, 198, 172, 1); */
+        background-image: url("/images/image10.jpg");
+        background-size:cover;
         padding: 20px;
     }
 
-    .form-container label {
+    .form-container p {
         font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: black;
     }
 
     input[type=text], select, textarea {
@@ -815,11 +701,12 @@ html, body {
     }
     
     input[type=submit] {
-        background-color: rgba(255, 246, 220, 1);
+        /* background-color: rgba(255, 246, 220, 1); */
+        background-color: rgba(255, 198, 172, 1);
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
         text-align: center;
-        padding: 5px;
+        padding: 10px;
         color: black;
         text-transform: uppercase;
         font-size: 16px;
@@ -828,6 +715,7 @@ html, body {
         cursor: pointer;
         display: block;
         margin: 0 auto;
+        border: 0;
     }
     
     input[type=submit]:hover {
