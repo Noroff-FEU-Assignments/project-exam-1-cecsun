@@ -9,90 +9,144 @@ html, body {
     width: 100%;
 }
 
-@media (min-width: 1001px) {
-    .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 50px;
-        text-align: center;
+.index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.see-all-recipes, .about-button, .view-more {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.see-all-recipes {
+    background-color: rgba(196, 193, 164, 1);
+    cursor: pointer;
+}
+
+.about-button, .view-more {
+    background-color: rgba(255, 198, 172, 1);
+    cursor: pointer;
+}
+
+.see-all-recipes:hover, .about-button:hover, .view-more:hover {
+    opacity: 1;
+}
+
+
+.see-all-recipes-button {
+    position: relative;
+    text-align: center;
+}
+
+.index-about-container img {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.index-about-image {
+    background-color: rgba(255, 198, 172, 1);
+}
+
+.index-about-info {
+    padding: 20px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(255, 198, 172, 1);
+    text-align: center;
+}
+
+.index-about-info h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.index-about-info p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .see-all-recipes, .about-button, .view-more {
+        font-size: 16px;
     }
 
+    .index-about-container {
+        margin: 0px 30px;
+    }
+
+    .index-about-info p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 501px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         margin: 50px 0px 20px 0px;
-    }
-
-    .see-all-recipes, .about-button, .view-more {
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-size: 18px;
-        color: black;
-        border-radius: 5px;
-        opacity: 0.9;
     }
 
     .see-all-recipes, .about-button, .view-more {
         padding: 10px;
     }
 
-    .see-all-recipes {
-        background-color: rgba(196, 193, 164, 1);
-        cursor: pointer;
-    }
-
-    .about-button, .view-more {
-        background-color: rgba(255, 198, 172, 1);
-        cursor: pointer;
-    }
-
-    .see-all-recipes:hover, .about-button:hover, .view-more:hover {
-        opacity: 1;
-    }
-
     .see-all-recipes-button {
-        position: relative;
-        text-align: center;
-        padding: 15px;
         margin: 60px 0px 80px 0px;
     }
 
     .index-about-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0px 50px;
     }
 
     .index-about-container img {
         display: flex;
         margin: 0 auto;
-        padding: 10px;
     }
 
     .index-about-image {
-        background-color: rgba(255, 198, 172, 1);
         border-radius: 5px 0px 0px 5px;
     }
 
     .index-about-info {
-        background-color: white;
-        border-style: solid;
-        border-color: rgba(255, 198, 172, 1);
         border-width: 10px 10px 10px 0px;
-        text-align: center;
         border-radius: 0px 5px 5px 0px;
     }
 
-    .index-about-info h2 {
-        font-family: 'Dancing Script', cursive;
+    .index-about-info p {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         font-size: 50px;
-        text-align: center;
+    }
+
+    .see-all-recipes, .about-button, .view-more {
+        font-size: 18px;
+    }
+
+    .see-all-recipes-button {
+        padding: 15px;
+    }
+
+    .index-about-container {
+        margin: 0px 50px;
+    }
+
+    .index-about-info h2 {
+        font-size: 50px;
         margin: 30px 0px;
     }
 
     .index-about-info p {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
         font-size: 18px;
-        width: 350px;
         margin: 0 auto 50px;
     }
 
@@ -243,94 +297,15 @@ html, body {
 
 @media (min-width: 501px) and (max-width: 1000px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        font-family: 'Dancing Script', cursive;
         font-size: 40px;
-        text-align: center;
-    }
-
-    .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        margin: 50px 0px 20px 0px;
-    }
-
-    .see-all-recipes, .about-button, .view-more {
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-size: 16px;
-        color: black;
-        border-radius: 5px;
-        opacity: 0.9;
-    }
-
-    .see-all-recipes, .about-button, .view-more {
-        padding: 10px;
-    }
-
-    .see-all-recipes {
-        background-color: rgba(196, 193, 164, 1);
-        cursor: pointer;
-    }
-
-    .about-button, .view-more {
-        background-color: rgba(255, 198, 172, 1);
-        cursor: pointer;
-    }
-
-    .see-all-recipes:hover, .about-button:hover, .view-more:hover {
-        opacity: 1;
-    }
-
-    .see-all-recipes-button {
-        position: relative;
-        text-align: center;
-        /* padding: 15px; */
-        margin: 60px 0px 80px 0px;
-    }
-
-    .index-about-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0px 30px;
-    }
-
-    .index-about-container img {
-        display: flex;
-        margin: 0 auto;
-        /* border-radius: 20px; */
-        padding: 10px;
-        height: 100%;
-        width: 100%;
-        object-fit:cover;
-    }
-
-    .index-about-image {
-        background-color: rgba(255, 198, 172, 1);
-        border-radius: 5px 0px 0px 5px;
-        /* margin: 0 auto; */
-    }
-
-    .index-about-info {
-        background-color: white;
-        border-style: solid;
-        border-color: rgba(255, 198, 172, 1);
-        border-width: 10px 10px 10px 0px;
-        text-align: center;
-        border-radius: 0px 5px 5px 0px;
-        padding: 20px;
     }
 
     .index-about-info h2 {
-        font-family: 'Dancing Script', cursive;
         font-size: 40px;
-        text-align: center;
         margin: 10px 0px;
     }
 
     .index-about-info p {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        font-size: 16px;
-        width: 350px;
         margin: 0 auto 40px;
     }
 
@@ -483,9 +458,7 @@ html, body {
 
 @media (max-width: 500px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
-        font-family: 'Dancing Script', cursive;
         font-size: 35px;
-        text-align: center;
     }
       
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
@@ -493,77 +466,29 @@ html, body {
     }
 
     .see-all-recipes, .about-button, .view-more {
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-size: 16px;
-        color: black;
-        border-radius: 5px;
-        opacity: 0.9;
-    }
-
-    .see-all-recipes, .about-button, .view-more {
         padding: 8px;
     }
 
-    .see-all-recipes {
-        background-color: rgba(196, 193, 164, 1);
-        cursor: pointer;
-    }
-
-    .about-button, .view-more {
-        background-color: rgba(255, 198, 172, 1);
-        cursor: pointer;
-    }
-
-    .about-button:hover, .view-more:hover, .see-all-recipes:hover {
-        opacity: 1;
-    }
-
     .see-all-recipes-button {
-        position: relative;
-        text-align: center;
         padding: 20px;
         margin-bottom: 20px;
     }
 
-    .index-about-container {
-        margin: 0px 30px;
-    }
-
-    .index-about-container img {
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
     .index-about-image {
-        background-color: rgba(255, 198, 172, 1);
         border-radius: 5px 5px 0px 0px;
     }
 
     .index-about-info {
-        padding: 20px;
-        background-color: white;
-        border-style: solid;
-        border-color: rgba(255, 198, 172, 1);
         border-width: 0px 10px 10px 10px;
-        text-align: center;
         border-radius: 0px 0px 5px 5px;
     }
 
     .index-about-info h2 {
-        font-family: 'Dancing Script', cursive;
         font-size: 30px;
-        text-align: center;
         margin-bottom: 10px;
     }
 
     .index-about-info p {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        font-size: 16px;
         width: 300px;
         margin: 0 auto 25px;
     }
