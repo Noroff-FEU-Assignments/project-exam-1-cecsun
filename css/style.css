@@ -9,7 +9,7 @@ html, body {
     width: 100%;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 50px;
@@ -241,7 +241,7 @@ html, body {
     }
 }
 
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 501px) and (max-width: 1000px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 40px;
@@ -481,7 +481,7 @@ html, body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .index-main h1, .recipes-main h1, .product-main h1, .about-main h1, .contact-main h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 35px;

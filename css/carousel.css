@@ -1,4 +1,4 @@
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
     .carousel {
         position: relative;
         height: 450px;
@@ -77,7 +77,7 @@
     .is-hidden { display: none; }
 }
 
-@media (min-width: 801px) and (max-width: 1200px) {
+@media (min-width: 501px) and (max-width: 1000px) {
     .carousel {
         position: relative;
         height: 300px;
@@ -157,7 +157,7 @@
     .is-hidden { display: none; }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .carousel {
         position: relative;
         height: 200px;
