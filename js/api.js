@@ -11,7 +11,6 @@ async function fetchData(url) {
 // Fetches all data from the API
 export async function fetchAllPostsByPage(page_num) {
     const payload = await fetch(base_url + "/posts?page=" + page_num);
-    // const maxPages = payload.headers.
     const maxPages = payload.headers.get("x-wp-totalpages");
     const data = await payload.json();
     return {data, maxPages};

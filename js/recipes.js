@@ -54,7 +54,6 @@ async function populateRecipes() {
         viewMore.style.display = "none"; 
         return;
     }
-  
 }
 
 viewMore.addEventListener('click', populateRecipes);

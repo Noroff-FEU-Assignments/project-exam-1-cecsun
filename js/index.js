@@ -1,6 +1,5 @@
 import {fetchAllPostsByPage, fetchMediaByID} from "./api.js"
 
-
 async function populateCarousel() {
     let carousel = document.querySelector(".carousel-track")
     let postsData = await fetchAllPostsByPage(1);
@@ -10,7 +9,7 @@ async function populateCarousel() {
 
     for (let carouselSlide of carousel.children) {
         let numImages = 0;
-        // Make sure we don't exceed number of posts, or numbers of images per slide. 
+         
         while(postIndex < posts.length && numImages < imagesPerSlide) {
             let media = await fetchMediaByID(posts[postIndex].featured_media);
 
@@ -30,6 +29,5 @@ async function populateCarousel() {
         }
     }
 }
-
 
 populateCarousel();
