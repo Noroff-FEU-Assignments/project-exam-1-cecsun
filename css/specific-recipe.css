@@ -1,67 +1,118 @@
-@media (min-width: 1001px) {
-    .product-main {
-        margin: 0px 50px;
+.recipe-container2, .recipe-container3 {
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recipe-container2 {
+    background-color: rgba(255, 246, 220, 1);
+}
+
+.recipe-container3 {
+    background-color: rgba(196, 193, 164, 1);
+}
+
+.recipe-container3 li {
+    padding: 5px 0px;
+}
+
+.recipe-container3 h2, .instructions-container h3 {
+    text-align: center;
+}
+
+.recipe-container3 .ingredients-container {
+    display: flex;
+    justify-content: center;
+}
+
+.instructions-container {
+    background-color: rgba(255, 198, 172, 1);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.instructions-container ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .recipe-container2, .recipe-container3, .instructions-container {
+        font-size: 16px;
     }
 
+    .recipe-container2 {
+        padding: 20px;
+    }
+
+    .recipe-container3 h2, .instructions-container h3 {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .recipe-container2, .recipe-container3 {
+        margin-top: 20px;
+    }
+
+    .recipe-container3 ul {
+        padding-bottom: 20px;
+    }
+
+    
+    .instructions-container ol {
+        padding-bottom: 20px;
+        margin: 0px 30px 0px 50px;
+    }
+
+    .instructions-container li {
+        padding: 5px 0px;
+    }
+}
+
+@media (min-width: 801px) {
     .specific-recipe-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 
-    .recipe-container2, .recipe-container3 {
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-    }
-
-    .recipe-container2 {
-        background-color: rgba(255, 246, 220, 1);
-        padding: 40px;
-    }
-
-    .recipe-container3 {
-        background-color: rgba(196, 193, 164, 1);
-    }
-
-    .recipe-container3 ul {
-        padding-bottom: 40px;
-    }
-
-    .recipe-container3 li {
-        padding: 5px 0px;
-    }
-
     .recipe-container3 h2, .instructions-container h3 {
-        text-align: center;
-        font-size: 25px;
         font-weight: 600;
-        padding: 30px;
-    }
-
-    .recipe-container3 .ingredients-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .instructions-container {
-        background-color: rgba(255, 198, 172, 1);
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-        margin-top: 20px;
     }
 
     .instructions-container ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding-bottom: 40px;
         margin: 0px 40px;
     }
 
     .instructions-container li {
         padding: 10px 0px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .product-main {
+        margin: 0px 50px;
+    }
+
+    .recipe-container2, .recipe-container3, .instructions-container {
+        font-size: 18px;
+    }
+
+    .recipe-container2 {
+        padding: 40px;
+    }
+
+    .recipe-container3 ul {
+        padding-bottom: 40px;
+    }
+
+    .recipe-container3 h2, .instructions-container h3 {
+        font-size: 25px;
+        padding: 30px;
     }
 }
 
@@ -70,65 +121,8 @@
         margin: 0px 30px;
     }
 
-    .specific-recipe-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-
-    .recipe-container2, .recipe-container3 {
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-    }
-
-    .recipe-container2 {
-        background-color: rgba(255, 246, 220, 1);
-        padding: 20px;
-    }
-
-    .recipe-container3 {
-        background-color: rgba(196, 193, 164, 1);
-    }
-
     .recipe-container3 ul {
         padding-bottom: 30px;
-    }
-
-    .recipe-container3 li {
-        padding: 5px 0px;
-    }
-
-    .recipe-container3 h2, .instructions-container h3 {
-        text-align: center;
-        font-size: 18px;
-        font-weight: 600;
-        padding: 20px;
-    }
-
-    .recipe-container3 .ingredients-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .instructions-container {
-        background-color: rgba(255, 198, 172, 1);
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .instructions-container ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 40px;
-        margin: 0px 40px;
-    }
-
-    .instructions-container li {
-        padding: 10px 0px;
     }
 }
 
@@ -136,126 +130,10 @@
     .product-main {
         margin: 0px 60px;
     }
-
-    .recipe-container2, .recipe-container3 {
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .recipe-container2 {
-        background-color: rgba(255, 246, 220, 1);
-        padding: 20px;
-    }
-
-    .recipe-container3 {
-        background-color: rgba(196, 193, 164, 1);
-    }
-
-    .recipe-container3 ul {
-        padding-bottom: 20px;
-    }
-
-    .recipe-container3 li {
-        padding: 5px 0px;
-    }
-
-    .recipe-container3 h2, .instructions-container h3 {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .recipe-container3 h2, .instructions-container h3 {
-        padding: 20px;
-    }
-
-    .recipe-container3 .ingredients-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .instructions-container {
-        background-color: rgba(255, 198, 172, 1);
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .instructions-container ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;
-        margin: 0px 30px 0px 50px;
-    }
-
-    .instructions-container li {
-        padding: 5px 0px;
-    }
 }
 
 @media (max-width: 500px) {
     .product-main {
         margin: 0px 30px;
-    }
-
-    .recipe-container2, .recipe-container3 {
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .recipe-container2 {
-        background-color: rgba(255, 246, 220, 1);
-        padding: 20px;
-    }
-
-    .recipe-container3 {
-        background-color: rgba(196, 193, 164, 1);
-    }
-
-    .recipe-container3 ul {
-        padding-bottom: 20px;
-    }
-
-    .recipe-container3 li {
-        padding: 5px 0px;
-    }
-
-    .recipe-container3 h2, .instructions-container h3 {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .recipe-container3 h2, .instructions-container h3 {
-        padding: 20px;
-    }
-
-    .recipe-container3 .ingredients-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .instructions-container {
-        background-color: rgba(255, 198, 172, 1);
-        border-radius: 5px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .instructions-container ol {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;
-        margin: 0px 30px 0px 50px;
-    }
-
-    .instructions-container li {
-        padding: 5px 0px;
     }
 }

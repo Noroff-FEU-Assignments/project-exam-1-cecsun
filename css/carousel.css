@@ -1,40 +1,37 @@
-@media (min-width: 1001px) {
-    .carousel {
-        position: relative;
-        height: 450px;
-        width: 80%;
-        margin: 0 auto;
-    }
+.carousel {
+    position: relative;
+    margin: 0 auto;
+}
 
-    .carousel img {
-        height: 100%;
-        width: 100%;
-        padding: 5px;
-    }
+.carousel img {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
 
-    .carousel-track-container {
-        background-color: white;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
+.carousel-track-container {
+    background-color: white;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
+.carousel-slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 501px) {
     .carousel-track {
         height: 100%;
         transition: transform 250ms ease-in;
     }
 
-    .carousel-slide {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     .carousel-button-left, .carousel-button-right {
         position: absolute;
-        top: 50%;
         background-color: rgba(196, 193, 164, 1);
         border: 0;
         border-radius: 50%;
@@ -66,7 +63,6 @@
         height: 15px;
         background-color: rgba(215, 215, 215, 1);
         margin: 0px 10px;
-        margin-top: 10px;
         cursor: pointer;
     }
 
@@ -75,123 +71,53 @@
     }
 
     .is-hidden { display: none; }
+}
+
+@media (min-width: 1001px) {
+    .carousel {
+        height: 450px;
+        width: 80%;
+    }
+
+    .carousel-button-left, .carousel-button-right {
+        top: 50%;
+    }
+
+    .carousel-indicator {
+        margin-top: 10px;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
     .carousel {
-        position: relative;
         height: 300px;
         width: 80%;
-        margin: 0 auto;
     }
 
     .carousel img {
-        height: 100%;
-        width: 100%;
         object-fit: contain;
-        padding: 5px;
-    }
-
-    .carousel-track-container {
-        background-color: white;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .carousel-track {
-        height: 100%;
-        transition: transform 250ms ease-in;
-    }
-
-    .carousel-slide {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
     .carousel-button-left, .carousel-button-right {
-        position: absolute;
         top: 45%;
-        background-color: rgba(196, 193, 164, 1);
-        border: 0;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .carousel-button-left {
-        left: -50px;
-    }
-
-    .carousel-button-right {
-        right: -50px;
-    }
-
-    .carousel-button-left, .carousel-button-right {
-        width: 40px;
-        height: 40px;
-    }
-
-    .carousel-nav {
-        display: flex;
-        justify-content: center;
     }
 
     .carousel-indicator {
-        border: 0;
-        border-radius: 50%;
-        width: 15px;
-        height: 15px;
-        background-color: rgba(215, 215, 215, 1);
-        margin: 0px 10px;
         margin-top: 5px;
-        cursor: pointer;
     }
-
-    .carousel-indicator.current-slide {
-        background-color: rgba(85, 85, 85, 1);
-    }
-
-    .is-hidden { display: none; }
 }
 
 @media (max-width: 500px) {
     .carousel {
-        position: relative;
         height: 200px;
         width: 90%;
-        margin: 0 auto;
     }
 
     .carousel img {
-        height: 100%;
-        width: 100%;
-        padding: 5px;
         object-fit: cover;
     }
 
-    .carousel-track-container {
-        background-color: white;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .carousel-slide {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .carousel-button-left, .carousel-button-right {
-        display: none;
-    }
-
-    .carousel-nav {
+    .carousel-button-left, .carousel-button-right, .carousel-nav {
         display: none;
     }
 }
